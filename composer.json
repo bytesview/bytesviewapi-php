@@ -1,5 +1,5 @@
 {
-  "name": "BytesviewApi/BytesviewApi",
+  "name": "bytesview/bytesviewapi",
   "type": "library",
   "description": "The PHP library for use with the Bytesview REST API.",
   "keywords": ["sentiment","emotion","keywords","semantic","name gender","name entity recognition","intent detection"],
