@@ -1,0 +1,33 @@
+{
+  "name": "BytesviewApi",
+  "type": "library",
+  "description": "The PHP library for use with the Bytesview REST API.",
+  "keywords": ["sentiment","emotion","keywords","semantic","name gender","name entity recognition","intent detection"],
+  "license": "MIT",
+  "homepage": "https://www.bytesview.com",
+  "authors": [
+    {
+      "name": "Algodom Media",
+      "email": "contact@bytesview.com",
+      "homepage": "https://www.bytesview.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "source": "https://github.com/algodommedia/bytesviewapi-php",
+    "issues": "https://github.com/algodommedia/bytesviewapi-php/issues"
+  },
+  "repositories": [],
+  "require": {
+    "php": "^7.3 || ^7.4 || ^8.0",
+    "ext-curl": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8 || ^9"
+  },
+  "autoload": {
+    "psr-4": {
+      "BytesviewApi\\": "src"
+    }
+  }
+}
