@@ -64,10 +64,7 @@ use BytesviewApi\BytesviewApi;
 $bytesviewapiObj = new BytesviewApi(BYTESVIEW_API_KEY);
 
 # Pass your desired strings in an array with unique key
-$data = array(
-				"key1" => "We are good here",
-			    "key2" => "this is not what we expect"
-			   );
+$data = array("key1" => "We are good here","key2" => "this is not what we expect");
 
 $response = $bytesviewapiObj->sentiment_api($data,'en');
 
@@ -92,10 +89,7 @@ use BytesviewApi\BytesviewApi;
 $bytesviewapiObj = new BytesviewApi(BYTESVIEW_API_KEY);
 
 # Pass your desired strings in an array with unique key
-$data = array(
-				"key1" => "I am not feeling good",
-			   "key2" => "happy that you come here"
-			   );
+$data = array("key1" => "I am not feeling good","key2" => "happy that you come here");
 
 $response = $bytesviewapiObj->emotion_api($data,'en');
 
@@ -120,9 +114,7 @@ use BytesviewApi\BytesviewApi;
 $bytesviewapiObj = new BytesviewApi(BYTESVIEW_API_KEY);
 
 # Pass your desired strings in an array with unique key
-$data =  array(
-				"key1" => "Accessories for AirTags appearing online, Apple hasn't announced the tracking fobs"
-				);
+$data =  array("key1" => "Accessories for AirTags appearing online, Apple hasn't announced the tracking fobs");
 
 $response = $bytesviewapiObj->keywords_api($data,'en');
 
@@ -144,14 +136,10 @@ require_once '../autoload.php';
 
 use BytesviewApi\BytesviewApi;
 
-$bytesviewapiObj = new BytesviewApi(BYTESVIEW_API_KEY);
-
+$bytesviewapiObj 	=	new BytesviewApi(BYTESVIEW_API_KEY);
 
 # Pass your both strings in an array with unique key
-$data =  array(
-				"string1" => "A smiling costumed woman is holding an umbrella.",
-				 "string2" => "A happy woman in a fairy costume holds an umbrella."
-				 );
+$data	=	array("string1" => "A smiling costumed woman is holding an umbrella.","string2" => "A happy woman in a fairy costume holds an umbrella.");
 
 $response = $bytesviewapiObj->semantic_api($data,'en');
 
@@ -176,13 +164,7 @@ use BytesviewApi\BytesviewApi;
 $bytesviewapiObj = new BytesviewApi(BYTESVIEW_API_KEY);
 
 # Pass your desired names in the array format where each string has some unique key.
-$data  =	array(
-				"key1" => "alvina",
-				"key2" => "نسترن",
-			    "key3" => "ron",
-			    "key4" => "rinki",
-			    "key5" => "オウガ"
-			);
+$data	=	array("key1" => "alvina","key2" => "نسترن","key3" => "ron","key4" => "rinki","key5" => "オウガ");
 
 $response = $bytesviewapiObj->name_gender_api($data);
 
@@ -205,9 +187,7 @@ use BytesviewApi\BytesviewApi;
 $bytesviewapiObj = new BytesviewApi(BYTESVIEW_API_KEY);
 
 # Pass your desired strings in an array with unique key
-$data = array(
-				"key1" => "Mauritania and the IMF agreed Poverty Reduction arrangement"
-				);
+$data = array("key1" => "Mauritania and the IMF agreed Poverty Reduction arrangement");
 
 $response = $bytesviewapiObj->ner_api($data,'en');
 
@@ -232,9 +212,7 @@ use BytesviewApi\BytesviewApi;
 $bytesviewapiObj = new BytesviewApi(BYTESVIEW_API_KEY);
 
 # Pass your desired strings in an array with unique key
-$data = array(
-				"key1" => "Adam Rippon Wins 'Dancing With The Stars' Because It Was Destined"
-				);
+$data = array("key1" => "Adam Rippon Wins 'Dancing With The Stars' Because It Was Destined");
 
 $response = $bytesviewapiObj->intent_api($data,'en');
 
