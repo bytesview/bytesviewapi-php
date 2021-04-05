@@ -360,4 +360,22 @@ class BytesviewApiBase {
     {
         return self::API_HOST.self::API_VERSION.self::API_BASE_PATH.'/intent';
     }
+
+    /**
+     * GET Topic API Base URL
+     * @return string
+     */
+    protected function TopicApiURL():string
+    {
+        return self::API_HOST.self::API_VERSION.self::API_BASE_PATH.'/topic';
+    }
+
+    /**
+     * GET Feature API Base URL
+     * @return string
+     */
+    protected function FeatureApiURL():string
+    {
+        return self::API_HOST.self::API_VERSION.self::API_BASE_PATH.'/feature';
+    }
 }

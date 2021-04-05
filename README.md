@@ -73,7 +73,7 @@ $response = $bytesviewapiObj->sentiment_api($data,'en');
 
 `data` : You can pass your desired strings in the array format where each string has some unique key. 
 
-`lang` : Language Code (English - en, Arabic - ar, Japanese - ja, Turkish - tr), Default language is english(en).
+`lang` : Pass ISO code for the following supported language `English`, `Arabic`, `Turkish`, `Japanese`, `Spanish`, `French`, `German`, `Russian`, `Chinese(simplified)`, `Swedish`, `Czech`, `Danish`, `Greek`, `Korean`, `Latin`, `Hebrew`, `Indonesian`, `Kazakh`, `Armenian`, `Azerbaijani`, `Belarussian`, `Finnish`, `Bulgarian`, `Burmese`, `Persian`, `Portuguese`, `Urdu`, `Vietnamese`, `Thai`, `Hungarian`, `Italian`, `Polish`, `Ukrainian`, `Uzbek`. The default language is english(en).
 
 <br />
 
@@ -98,7 +98,7 @@ $response = $bytesviewapiObj->emotion_api($data,'en');
 
 `data` : You can pass your desired strings in the array format where each string has some unique key. 
 
-`lang` : Language Code (English - en), Default language is english(en).
+`lang` : Pass ISO code for the following supported language `English`, `Arabic`, `Turkish`, `Japanese`, `Spanish`, `French`, `German`, `Russian`, `Chinese(simplified)`, `Swedish`, `Czech`, `Danish`, `Greek`, `Korean`, `Latin`, `Hebrew`, `Indonesian`, `Kazakh`, `Armenian`, `Azerbaijani`, `Belarussian`, `Finnish`, `Bulgarian`, `Burmese`, `Persian`, `Portuguese`, `Urdu`, `Vietnamese`, `Thai`, `Hungarian`, `Italian`, `Polish`, `Ukrainian`, `Uzbek`. The default language is english(en).
 
 <br />
 
@@ -123,7 +123,7 @@ $response = $bytesviewapiObj->keywords_api($data,'en');
 
 `data` : You can pass your desired strings in the array format where each string has some unique key. 
 
-`lang` : Language Code (English - en), Default language is english(en).
+`lang` : Pass ISO code for the following supported language `English`, `French`, `Turkish`, `German`, `Japanese`, `Chinese(simplified)`, `Spanish`, `Arabic`, `Russian`, `Italian`, `Danish`. The default language is english(en).
 
 <br />
 
@@ -215,6 +215,56 @@ $bytesviewapiObj = new BytesviewApi(BYTESVIEW_API_KEY);
 $data = array("key1" => "Adam Rippon Wins 'Dancing With The Stars' Because It Was Destined");
 
 $response = $bytesviewapiObj->intent_api($data,'en');
+
+```
+`BYTESVIEW_API_KEY` : Your private Bytesview API key. 
+
+`data` : You can pass your desired strings in the array format where each string has some unique key. 
+
+`lang` : Language Code (English - en), Default language is english(en).
+
+<br />
+
+### TOPIC API
+
+`POST 1/static/topic`
+
+```
+require_once '../autoload.php';
+
+use BytesviewApi\BytesviewApi;
+
+$bytesviewapiObj = new BytesviewApi(BYTESVIEW_API_KEY);
+
+# Pass your desired strings in an array with unique key
+$data = array("key1" => "Shriram Automall India Limited is hiring for Accounts Department.");
+
+$response = $bytesviewapiObj->topic_api($data,'en');
+
+```
+`BYTESVIEW_API_KEY` : Your private Bytesview API key. 
+
+`data` : You can pass your desired strings in the array format where each string has some unique key. 
+
+`lang` : Language Code (English - en), Default language is english(en).
+
+<br />
+
+### FEATURE API
+
+`POST 1/static/feature`
+
+```
+require_once '../autoload.php';
+
+use BytesviewApi\BytesviewApi;
+
+$bytesviewapiObj = new BytesviewApi(BYTESVIEW_API_KEY);
+
+# Pass your desired strings in an array with unique key
+$data = array("key1" => "This is probably one of the funniest films of the 1980's. Eddie Murphy does a fine job as con man Billy Ray and Dan Ackroyd is great as Louis.");
+
+$response = $bytesviewapiObj->feature_api($data,'en');
 
 ```
 `BYTESVIEW_API_KEY` : Your private Bytesview API key. 

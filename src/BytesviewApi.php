@@ -100,4 +100,14 @@ class BytesviewApi extends BytesviewApiBase {
         $data   =   array('data' => $data,'lang'=>$lang);
         return $this->post($this->IntentApiURL(),$data,true);
     }
+
+    function topic_api($data,$lang = 'en'){
+        $data   =   array('data' => $data,'lang'=>$lang);
+        return $this->post($this->TopicApiURL(),$data,true);
+    }
+
+    function feature_api($data,$lang = 'en'){
+        $data   =   array('data' => $data,'lang'=>$lang);
+        return $this->post($this->FeatureApiURL(),$data,true);
+    }
 }
