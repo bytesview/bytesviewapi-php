@@ -24,7 +24,7 @@ class BytesviewApiBase {
      * 
      * @var string
      */    
-    private const API_VERSION       =   '1';
+    private const API_VERSION       =   '1.1';
     
     /**
      * Response details about the result of the last request

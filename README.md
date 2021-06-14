@@ -54,7 +54,7 @@ See the [API docs](https://www.bytesview.com/docs/).
 
 ### SENTIMENT API
 
-`POST 1/static/sentiment`
+`POST 1.1/static/sentiment`
 
 ```
 require_once '../autoload.php';
@@ -73,13 +73,13 @@ $response = $bytesviewapiObj->sentiment_api($data,'en');
 
 `data` : You can pass your desired strings in the array format where each string has some unique key. 
 
-`lang` : Pass ISO code for the following supported language `English`, `Arabic`, `Turkish`, `Japanese`, `Spanish`, `French`, `German`, `Russian`, `Chinese(simplified)`, `Swedish`, `Czech`, `Danish`, `Greek`, `Korean`, `Latin`, `Hebrew`, `Indonesian`, `Kazakh`, `Armenian`, `Azerbaijani`, `Belarussian`, `Finnish`, `Bulgarian`, `Burmese`, `Persian`, `Portuguese`, `Urdu`, `Vietnamese`, `Thai`, `Hungarian`, `Italian`, `Polish`, `Ukrainian`, `Uzbek`. The default language is english(en).
+`lang` : Pass [ISO code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the following supported language `English`, `Arabic`, `Turkish`, `Japanese`, `Spanish`, `French`, `German`, `Russian`, `Chinese(simplified)`, `Swedish`, `Czech`, `Danish`, `Greek`, `Korean`, `Latin`, `Hebrew`, `Indonesian`, `Kazakh`, `Armenian`, `Azerbaijani`, `Belarussian`, `Finnish`, `Bulgarian`, `Burmese`, `Persian`, `Portuguese`, `Urdu`, `Vietnamese`, `Thai`, `Hungarian`, `Italian`, `Polish`, `Ukrainian`, `Uzbek`. The default language is english(en).
 
 <br />
 
 ### EMOTION API
 
-`POST 1/static/emotion`
+`POST 1.1/static/emotion`
 
 ```
 require_once '../autoload.php';
@@ -98,13 +98,13 @@ $response = $bytesviewapiObj->emotion_api($data,'en');
 
 `data` : You can pass your desired strings in the array format where each string has some unique key. 
 
-`lang` : Pass ISO code for the following supported language `English`, `Arabic`, `Turkish`, `Japanese`, `Spanish`, `French`, `German`, `Russian`, `Chinese(simplified)`, `Swedish`, `Czech`, `Danish`, `Greek`, `Korean`, `Latin`, `Hebrew`, `Indonesian`, `Kazakh`, `Armenian`, `Azerbaijani`, `Belarussian`, `Finnish`, `Bulgarian`, `Burmese`, `Persian`, `Portuguese`, `Urdu`, `Vietnamese`, `Thai`, `Hungarian`, `Italian`, `Polish`, `Ukrainian`, `Uzbek`. The default language is english(en).
+`lang` : Pass [ISO code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the following supported language `English`, `Arabic`, `Turkish`, `Japanese`, `Spanish`, `French`, `German`, `Russian`, `Chinese(simplified)`, `Swedish`, `Czech`, `Danish`, `Greek`, `Korean`, `Latin`, `Hebrew`, `Indonesian`, `Kazakh`, `Armenian`, `Azerbaijani`, `Belarussian`, `Finnish`, `Bulgarian`, `Burmese`, `Persian`, `Portuguese`, `Urdu`, `Vietnamese`, `Thai`, `Hungarian`, `Italian`, `Polish`, `Ukrainian`, `Uzbek`. The default language is english(en).
 
 <br />
 
 ### KEYWORDS API
 
-`POST 1/static/keywords`
+`POST 1.1/static/keywords`
 
 ```
 require_once '../autoload.php';
@@ -123,13 +123,13 @@ $response = $bytesviewapiObj->keywords_api($data,'en');
 
 `data` : You can pass your desired strings in the array format where each string has some unique key. 
 
-`lang` : Pass ISO code for the following supported language `English`, `French`, `Turkish`, `German`, `Japanese`, `Chinese(simplified)`, `Spanish`, `Arabic`, `Russian`, `Italian`, `Danish`. The default language is english(en).
+`lang` : Pass [ISO code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the following supported language `English`, `French`, `Turkish`, `German`, `Japanese`, `Chinese(simplified)`, `Spanish`, `Arabic`, `Russian`, `Italian`, `Danish`. The default language is english(en).
 
 <br />
 
 ### SEMANTIC API
 
-`POST 1/static/semantic`
+`POST 1.1/static/semantic`
 
 ```
 require_once '../autoload.php';
@@ -154,7 +154,7 @@ $response = $bytesviewapiObj->semantic_api($data,'en');
 
 ### NAME-GENDER API
 
-`POST 1/static/name-gender`
+`POST 1.1/static/name-gender`
 
 ```
 require_once '../autoload.php';
@@ -177,7 +177,7 @@ $response = $bytesviewapiObj->name_gender_api($data);
 
 ### NAMED-ENTITY API
 
-`POST 1/static/ner`
+`POST 1.1/static/ner`
 
 ```
 require_once '../autoload.php';
@@ -202,7 +202,7 @@ $response = $bytesviewapiObj->ner_api($data,'en');
 
 ### INTENT API
 
-`POST 1/static/intent`
+`POST 1.1/static/intent`
 
 ```
 require_once '../autoload.php';
@@ -227,7 +227,7 @@ $response = $bytesviewapiObj->intent_api($data,'en');
 
 ### TOPIC API
 
-`POST 1/static/topic`
+`POST 1.1/static/topic`
 
 ```
 require_once '../autoload.php';
@@ -252,7 +252,7 @@ $response = $bytesviewapiObj->topic_api($data,'en');
 
 ### FEATURE API
 
-`POST 1/static/feature`
+`POST 1.1/static/feature`
 
 ```
 require_once '../autoload.php';
